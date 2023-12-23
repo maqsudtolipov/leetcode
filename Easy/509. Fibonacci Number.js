@@ -20,8 +20,8 @@ const fib2 = function(n) {
 
 	const memoFib = (m) => {
 		if (m <= 1) return m;
-		if (brain[m]) return brain[m];
 
+		if (brain[m]) return brain[m];
 		brain[m] = memoFib(m - 1) + memoFib(m - 2);
 
 		return brain[m];
