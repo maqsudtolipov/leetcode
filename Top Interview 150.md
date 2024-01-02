@@ -9,4 +9,5 @@
 
 ## 👆🏻 Two Pointer
 - [x] 125 - 🧐 Valid Palindrome
-- [x] 391 - 🚂 Is Subsequence
+- [x] 167 - 🍉 Two Sum II - Input Array Is Sorted
+- [x] 392 - 🚂 Is Subsequence
