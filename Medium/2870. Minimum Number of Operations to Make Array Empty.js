@@ -3,20 +3,18 @@
  * @return {number}
  */
 const minOperations = function (nums) {
-  const map = new Map();
+  const counter = new Map();
   for (const num of nums) {
-    map.set(num, (map.get(num) || 0) + 1);
+    counter.set(num, (counter.get(num) || 0) + 1);
   }
 
   let ans = 0;
-  for (const val of map.values()) {
-    if (val < 2) return -1;
-
-    if (val % 3 === 0) {
-      ans += val / 3;
+  for (const c of counter.values()) {
+    if (c === 1) {
+      return -1;
     }
+    ans += Math.ceil(c / 3);
   }
-
   return ans;
 };
 
